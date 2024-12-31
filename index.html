@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!------ meta--------->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!------ title--------->
+    <title>Bookmarker</title>
+    <!------ fonts--------->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+
+    <!------ css--------->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="totel my-5 row">
+        <div class="col-sm-12">
+          <h1 class="text-center">Bookmarker</h1>
+          <div class="bookmark">
+            <h2>
+              <span><i class="fa-solid fa-bookmark"></i></span> Bookmark your
+              favorite sites <span><i class="fa-solid fa-bookmark"></i></span>
+            </h2>
+            <div>
+              <div>
+                <label for="bookMarkName"
+                  ><span><i class="fa-solid fa-book-bookmark"></i></span> Site
+                  Name</label
+                >
+                <input
+                  type="text"
+                  oninput="validName()"
+                  id="bookMarkName"
+                  placeholder="Bookmark Name"
+                  class="form-control my-3"
+                />
+              </div>
+              <div>
+                <label for="urlSite"
+                  ><span><i class="fa-solid fa-link pe-2"></i></span> Site
+                  URL</label
+                >
+                <input
+                  oninput=" validUrl()"
+                  type="url"
+                  id="urlSite"
+                  placeholder="Website URL"
+                  class="form-control my-3"
+                />
+              </div>
+
+              <button onclick="addWebSite()" class="btn btn-danger mt-2 py-2 px-5">
+                Submit
+              </button>
+            </div>
+          </div>
+          <table class="w-100 text-center my-3 fs-5 bg-white">
+            <thead>
+              <tr>
+                <th>Index</th>
+                <th>Website Name</th>
+                <th>Visit</th>
+                <th>Delete</th>
+              </tr>
+            </thead>
+            <tbody id="bodyOfTable"></tbody>
+          </table>
+          <div class="alert alert-danger d-none" id="alertKey">
+            <button id="closeKey" onclick="closeKey()"><i class="fa-solid fa-xmark close fs-3"></i></button>
+            <h3 class="my-3">Site Name or Url is not valid, Please follow the rules below :</h3>
+            <p><span><i class="fa-regular fa-circle-right p-2"></i></span>Site name must contain at least 3 characters</p>
+            <p><span><i class="fa-regular fa-circle-right p-2"></i></span>Site URL must be a valid one</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!----------------navbar------------------>
+    <!----------------home------------------>
+
+    <!----------------about------------------>
+
+    <!----------------services------------------>
+
+    <!----------------work------------------>
+
+    <!----------------blog------------------>
+
+    <!----------------contact------------------>
+
+    <!----------------script------------------>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
